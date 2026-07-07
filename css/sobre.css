@@ -1,0 +1,368 @@
+/* tipografia */ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+
+/* variable colores */ 
+:root{
+    --background-color: #fef7ee;
+    --title-color: #9c5726;
+    --navbar-container: #9e704f;
+    --modal-background: #9c795f;
+}
+
+
+
+/* General */ 
+body{
+  background-color: var(--background-color);
+}
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* div del header */ 
+.header-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+/* logo del header */ 
+.header-logo{
+    width: 150px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* titulo capistudio */ 
+.header-title{
+    font-size: 2.5rem;
+    color: var(--title-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+
+/* navbar */
+.header-nav {
+  /*border: 2px solid var(--navbar-container);
+  padding: 10px 20px;
+  border-radius: 5px;*/
+  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none; /* quita el azul/subrayado */
+  color: black; /* cambia el color que quieras */
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* sobre nosotros titulo */
+.descripcion-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+/* sobre nosotros descripcion */
+.descripcion-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* fundadores */
+.fundadores{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.fundadores .vsergiors .vsergiors-foto{
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fundadores .ruvexdev .ruvexdev-foto{
+    
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fundadores .vsergiors .vsergiors-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fundadores .ruvexdev .ruvexdev-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* ventana emergente */ 
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: var(--modal-background);
+    padding: 30px;
+    border-radius: 16px;
+    width: 340px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+
+    transform: scale(0.8);
+    opacity: 0;
+    animation: popIn 0.25s forwards;
+    text-align: center;
+}
+
+@keyframes popIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+
+    transition: 0.2s;
+}
+
+.close:hover {
+    background: #ff3b3b;
+    border-color: #ff3b3b;
+    transform: scale(1.05);
+}
+
+#modal-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    background: var(--modal-background);
+    color: black;
+    padding: 6px 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#modal-desc {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.4;
+    background: var(--modal-background);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/*footer*/
+.footer{
+    margin-top: 60px;
+    width: 100%;
+    background: rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 25px 20px;
+}
+
+/* contenedor centrado */
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+/* marca */
+.footer-brand{
+    max-width: 400px;
+}
+
+.footer-brand h2{
+    color: var(--title-color);
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.footer-brand p{
+    font-size: 13px;
+    opacity: 0.7;
+    line-height: 1.4;
+}
+
+/* redes */
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer-social h3{
+    display: none; /* más limpio */
+}
+
+/* links */
+.footer a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.footer a:hover{
+    opacity: 1;
+    transform: translateY(-2px);
+    color: var(--title-color);
+}
+
+/* bottom */
+.footer-bottom{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.6;
+}
+.fundadores-texto .textofundadores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+/*responsive*/
+/* hamburguesa - oculto por defecto */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-top: 15px;
+}
+
+.menu-toggle ion-icon {
+  font-size: 28px;
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle.open ion-icon {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 510px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .header-nav.open {
+    display: flex;
+  }
+}
+@media (max-width: 510px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .header-nav.open {
+    display: flex;
+  }
+
+  /* fundadores en vertical */
+  .fundadores {
+    flex-direction: column;
+  }
+}
