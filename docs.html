@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets/favicon.png" type="image/x-icon">
+<title>CapiStudio · Docs</title>
+<link rel="stylesheet" href="css/styledocs.css">
+</head>
+<body>
+
+  <header>
+    <div class="wrap"> 
+      <img src="assets/logosuperior.png" alt="CapiStudio" class="logosuperior">
+      <nav> 
+        <a href="index.html">Inicio</a>
+        <a href="#plugins">Plugins</a>
+        <a href="https://modrinth.com/organization/capistudio" target="_blank" rel="noopener">Modrinth</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">CapiStudio · Documentación</div>
+      <h1>Plugins de <span>Minecraft</span><br>hechos por CapiStudio.</h1>
+      <p>Aquí tienes toda la documentación de nuestros plugins: descripción, versión soportada y enlaces directos a Modrinth y Spigot.</p>
+      <div class="hero-stats">
+        <div><strong id="statCount">0</strong><span>Plugins publicados</span></div>
+        <div><strong>Paper</strong><span>Plataforma principal</span></div>
+        <div><strong>Java 21</strong><span>Stack</span></div>
+      </div>
+    </section>
+
+    <section id="plugins">
+      <div class="controls">
+        <input type="text" id="search" placeholder="Buscar plugin por nombre, tag o descripción...">
+      </div>
+
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty">No se ha encontrado ningún plugin con ese filtro.</div>
+    </section>
+  </main>
+
+  <footer>
+    Hecho por <a href="https://modrinth.com/organization/capistudio" target="_blank" rel="noopener">CapiStudio</a> · Documentación generada localmente
+  </footer>
+
+  <script src="js/datadocs.js"></script>
+  <script src="js/appdocs.js"></script>
+</body>
+</html>

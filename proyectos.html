@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapiStudio · Proyectos</title>
+    <link rel="stylesheet" href="css/proyectos.css">
+    <link rel="icon" href="assets/favicon.png" sizes="64x64" type="image/png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+  <ion-icon name="menu-outline"></ion-icon>
+</button>
+ <div class="header-div">
+    <img src="assets/logo.png" alt="CapiStudio Logo" class="header-logo">
+    <div class="header-nav" id="headerNav">
+  <a href="index.html" class="nav-link">Inicio</a>
+  <a href="sobre.html" class="nav-link">Sobre Nosotros</a>
+  <a href="proyectos.html" class="nav-link">Proyectos</a>
+  <a href="docs.html" class="nav-link">Docs</a>
+  <a href="contacto.html" class="nav-link">Contacto</a>
+</div>
+<div class="proyectos">
+
+    <div class="capicash">
+        <img src="assets/capicash.png" alt="Foto de CapiCash" class="capicash-foto">
+        <h1 class="capicash-name">CapiCash</h1>
+    </div>
+
+    <div class="vibra">
+        <img src="assets/vibra.png" alt="Foto de Vibra" class="vibra-foto">
+        <h1 class="vibra-name">Vibra</h1>
+    </div>
+
+    <div class="tradeplus2">
+       <img src="assets/tradeplus2.png" alt="Foto de TradePlus2" class="tradeplus2-foto">
+        <h1 class="tradeplus2-name">TradePlus2</h1>
+    </div>
+
+    <div class="seasonalshop">
+       <img src="assets/seasonalshop.png" alt="Foto de SeasonalShop" class="seasonalshop-foto">
+        <h1 class="seasonalshop-name">SeasonalShop</h1>
+    </div>
+
+</div>
+<div class="proyectos-texto">
+        <p class="textofundadores">Dale click a una foto o a un nombre para ver más información.</p>
+    </div>
+
+    
+
+    <!-- ventana emergente-->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+    </div>
+</div>  
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h2>CapiStudio</h2>
+            <p>Web Development Studio · Diseño y desarrollo de aplicaciones modernas.</p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Redes</h3>
+            <a href="https://discord.gg/NREJKT3qND" target="_blank">Discord</a>
+            <a href="mailto:vsergiors@gmail.com">Email</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 CapiStudio. Todos los derechos reservados.</p>
+    </div>
+</footer>
+    <script src="js/proyectos.js"></script>
+</body>
+</html>
