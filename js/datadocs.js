@@ -39,6 +39,16 @@ const PLUGINS = [
     spigot: "https://www.spigotmc.org/resources/seasonalshop.136858/",
     icon: "🛒"
   },
+  {
+    name: "VoidLottey",
+    version: "1.0.0",
+    mcVersion: "Paper 1.21.9",
+    description: "VoidLottery — Automatic lottery system with weighted draws. Players buy tickets through Vault economy to enter a growing pot. The plugin runs draws automatically on a set interval, picking winners with odds proportional to tickets owned. Includes persistent storage so the pot survives restarts, plus admin controls to force draws or reload config. Requires: Vault.",
+    tags: ["Economia", "MiniJuego"],
+    modrinth: "https://modrinth.com/plugin/voidlottery",
+    spigot: "https://www.spigotmc.org/resources/voidlottery.136873/",
+    icon: "LT"
+  },
 
   // 👇 Copia aquí abajo un bloque nuevo cuando publiques otro plugin
   /*
