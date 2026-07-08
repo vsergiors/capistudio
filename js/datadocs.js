@@ -49,6 +49,16 @@ const PLUGINS = [
     spigot: "https://www.spigotmc.org/resources/voidlottery.136873/",
     icon: "🎟️"
   },
+  {
+    name: "VoidPunishments",
+    version: "1.0.0",
+    mcVersion: "Paper 1.21.9",
+    description: "VoidPunishments — sistema de sanciones (ban, tempban, banip, kick, warn, mute) 100% configurable, con modo silencioso y variables dinámicas.",
+    tags: ["Gestion"],
+    modrinth: "https://modrinth.com/plugin/voidpunishments",
+    spigot: "https://www.spigotmc.org/resources/voidpunishments.136892/",
+    icon: "🔨"
+  },
 
   // 👇 Copia aquí abajo un bloque nuevo cuando publiques otro plugin
   /*
