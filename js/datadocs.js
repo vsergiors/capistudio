@@ -25,7 +25,6 @@ const PLUGINS = [
     mcVersion: "Paper 1.21.9",
     description: "TradePlus is a secure player-to-player trading plugin for Paper 1.21.9 with a shared trade GUI, Vault economy support, and scam protection.",
     tags: ["Economía", "Transporte", "Utilidad"],
-    modrinth: "https://modrinth.com/plugin/tradeplus2",
     spigot: "https://www.spigotmc.org/resources/tradeplus2.136861/",
     icon: "🔁"
   },
@@ -35,7 +34,6 @@ const PLUGINS = [
     mcVersion: "Paper 1.21.9",
     description: "SeasonalShop is a seasonal cosmetics shop for Paper 1.21.9 with Vault support and automatic season switching.",
     tags: ["Economia"],
-    modrinth: "https://modrinth.com/plugin/seasonalshop",
     spigot: "https://www.spigotmc.org/resources/seasonalshop.136858/",
     icon: "🛒"
   },
